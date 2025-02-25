@@ -5,6 +5,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
+import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +18,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val doctorButton = this.findViewById<ImageButton>(R.id.imageButtonDoctor)
+        val personButton = this.findViewById<ImageButton>(R.id.imageButtonPerson)
+        doctorButton.setOnClickListener {
+            val intent = Intent(this, SignupDoctor::class.java)
+            startActivity(intent)
+        }
+
+        personButton.setOnClickListener {
+            val intent = Intent(this, SignupPatient::class.java)
+            startActivity(intent)
+        }
+
     }
 }

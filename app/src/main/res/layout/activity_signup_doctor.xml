@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/purplegradient"
+    android:background="@drawable/cyan"
     tools:context=".SignupDoctor">
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Doctor Sign Up"
+            android:text="@string/doctorSignupMessage"
             android:textSize="24sp"
             android:textStyle="bold"
             android:typeface="serif" />
@@ -41,7 +41,7 @@
                 android:background="@drawable/lavender_border"
                 android:drawableStart="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
-                android:hint="Username"
+                android:hint="@string/hintUsername"
                 android:padding="8dp" />
 
             <EditText
@@ -51,9 +51,9 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/lavender_border"
-                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawableStart="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
-                android:hint="Email"
+                android:hint="@string/emailHint"
                 android:padding="8dp" />
 
             <EditText
@@ -66,7 +66,7 @@
                 android:background="@drawable/lavender_border"
                 android:drawableStart="@drawable/baseline_password_24"
                 android:drawablePadding="8dp"
-                android:hint="Password"
+                android:hint="@string/passwordHint"
                 android:padding="8dp"
                 />
 
@@ -77,7 +77,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Register"/>
+                android:text="@string/registerButton"/>
 
 
 
