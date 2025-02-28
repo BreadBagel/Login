@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/new_patient"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="New Patient"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/patient_medical_records"
+        android:layout_marginBottom="50dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/patient_medical_records"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Patient Medical Records"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/health_center_Reports"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Health Center Reports"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/patient_medical_records"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:background="@drawable/lavender_border"
+        android:scaleType="fitCenter"/>
+
+
+
+</RelativeLayout>

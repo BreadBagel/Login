@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcomeMessage">Welcome to DeepBreath!</string>
+    <string name="accountTypeMessage">Choose your account type!</string>
+    <string name="doctorSignupMessage">Doctor Sign Up</string>
+    <string name="hintUsername">Username</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="registerButton">Register</string>
+</resources>

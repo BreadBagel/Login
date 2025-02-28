@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ffa7b0">
+
+
+    <TextView
+        android:id="@+id/tap_to_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to Record"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/radio_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/radio_button"/>
+
+    <ImageButton
+        android:id="@+id/check_circle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/radio_button"
+        android:layout_toLeftOf="@id/radio_button"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/check_circle" />
+
+
+    <ImageButton
+        android:id="@+id/help_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/radio_button"
+        android:layout_toRightOf="@id/radio_button"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/help"
+        android:contentDescription="Help Button" />
+</RelativeLayout>
