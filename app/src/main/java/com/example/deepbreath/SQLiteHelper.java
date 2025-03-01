@@ -10,7 +10,7 @@
         private static final int DATABASE_VERSION = 1;
         private static final String DATABASE_NAME = "patient_info.db";
 
-        // Table
+        // Patient Table
         public static final String TABLE_PATIENT = "patient";
         public static final String COLUMN_ID = "id";
         public static final String COLUMN_NAME = "name";
