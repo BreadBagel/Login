@@ -3,15 +3,13 @@ package com.example.deepbreath;
 import android.content.Intent;
 import android.text.style.UnderlineSpan;
 import android.os.Bundle;
-import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.widget.ImageButton;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -26,15 +24,8 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // Button for new patient registration
-        Button NewPatient = findViewById(R.id.new_patient);
-        NewPatient.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, NewPatientScreen.class);
-            startActivity(intent);
-        });
-
         // TextView redirection for "Login"
-        TextView textView = findViewById(R.id.textView); // Ensure you have a TextView with this ID in activity_main.xml
+        TextView textView = findViewById(R.id.loginRedirectText); // Ensure you have a TextView with this ID in activity_main.xml
 
         String fullText = "Already a user? Login";
         SpannableString spannableString = new SpannableString(fullText);
@@ -64,5 +55,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // ImageButton navigation
+        ImageButton doctorButton = findViewById(R.id.imageButtonDoctor);
+        ImageButton personButton = findViewById(R.id.imageButtonPerson);
+
+        doctorButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SignupDoctor.class);
+            startActivity(intent);
+        });
+
+        personButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SignupPatient.class);
+            startActivity(intent);
+        });
     }
 }
+

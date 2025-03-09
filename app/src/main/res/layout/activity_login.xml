@@ -4,25 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@drawable/gradient_background"
     android:gravity="center">
 
     <EditText
         android:id="@+id/editTextUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Username" />
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:drawablePadding="8dp"
+        android:hint="Enter Username"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/white_user"/>
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:drawablePadding="8dp"
         android:hint="Enter Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/white_password"
+        />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:text="Login"
         android:layout_marginTop="16dp"/>
 

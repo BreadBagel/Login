@@ -33,6 +33,8 @@
         <activity android:name=".PatientInfo" />
         <activity android:name=".LoginActivity"
                   android:exported="false"/>
+        <activity android:name=".SignupDoctor"/>
+        <activity android:name=".SignupPatient"/>
 
     </application>
 
